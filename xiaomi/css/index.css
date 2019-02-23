@@ -391,7 +391,6 @@ ul.aslide {
     font-size: 14px;
     color: #212121;
     font-weight: 400;
-    white-space: nowrap;
 }
 
 .titleContent2 .mix, .titleContent3 .mix, .titleContent4 .mix, .titleContent5 .mix {
@@ -430,6 +429,7 @@ ul.aslide {
     right: 0;
     bottom: 200px;
     /*background: #FF7C05;*/
+    z-index: 9999999999;
 
 }
 
@@ -440,6 +440,7 @@ ul.aslide {
     width: 81px;
     height: 75px;
     /*background: #16b0bc;*/
+    position: relative;
 }
 
 .b4 {
@@ -458,6 +459,38 @@ ul.aslide {
 
 .b1 a i:hover, .b2 a i:hover, .b3 a i:hover, .b4 a i:hover {
     color: #f4450b;
+}
+.ewm{
+    width: 107px;
+    height: 100px;
+    /*background: black;*/
+    position: absolute;
+    left: -108px;
+    top: 0;
+    display: none;
+}
+.ewm:before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    position: absolute;
+    left:95px;
+    top: 45px;
+    transform: rotate(45deg);
+    z-index: -2;
+}
+.ewmBox{
+    width: 100px;
+    height: 100px;
+    background: #ccc;
+    padding-top:10px ;
+}
+.ewm img{
+    display: block;
+    margin: auto;
+    width: 80px;
+    height: 80px;
 }
 
 .main {
@@ -1094,7 +1127,6 @@ h4{
     height: 25px;
     background: white;
     border: 1px solid rgba(0,0,0,0.2);
-
 }
 .payfor .payright i:hover{
     color: #ff6700;
